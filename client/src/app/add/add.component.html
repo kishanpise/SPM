@@ -1,0 +1,39 @@
+<div class="container">
+    <div>
+        <form #pro="ngForm" (ngSubmit)="onaddProject(pro)">
+            <div class="form-group">
+              <label for="title">TITLE</label>
+              <input ngModel type="text" class="form-control" name="title" id="title">
+            </div>
+            <div class="form-group">
+                <label for="cat">CATEGORY</label>
+                <select ngModel name="cat" id="cat" class="form-control">
+                    <option value="Education">EDUCATION</option>
+                    <option value="Agriculture">AGRICULTURE</option>
+                    <option value="Robotics">ROBOTICS</option>
+                  </select>
+            </div>
+            <div class="form-group">
+              <label for="team">TEAM</label>
+              <textarea ngModel class="form-control" name="team" id="team"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="desc">DESCRIPTION</label>
+                <textarea ngModel class="form-control" name="desc" id="desc"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tech">TECHNOLOGY</label>
+                <textarea ngModel class="form-control" name="tech" id="tech"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="sdate">START DATE</label>
+                <input ngModel type="date" class="form-control" name="sdate" id="sdate">
+            </div>
+            <div class="form-group">
+                <label for="edate">CATEGORY</label>
+                <input ngModel type="date" class="form-control" name="edate" id="edate">
+            </div>
+            <button type="submit" class="btn btn-primary">ADD PROJECT</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-6">
+            <form #stu="ngForm" (ngSubmit)="onAddStudent(stu)">
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input ngModel type="text" class="form-control" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input ngModel type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="clg">COLLEGE</label>
+                    <input ngModel type="text" class="form-control" name="clg" id="clg">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">PASSWORD</label>
+                    <input ngModel type="text" class="form-control" name="pwd" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="cpwd">CONFIRM PASSWORD</label>
+                    <input ngModel type="text" class="form-control" name="cpwd" id="cpwd">
+                </div>
+                <button type="submit" class="btn btn-primary" >SIGNUP</button>
+            </form>
+            <div><a href="" [routerLink]="['/home']">ALREADY MEMBER? LOGIN</a></div>
+        </div>
+        <div class="col-md-6">
+            <div><a href="https://www.facebook.com"><i class="fa fa-facebook"></i>CONTINUE WITH FACEBOOK</a></div>
+            <div><a href="https://www.google.com"><i class="fa fa-google"></i>CONTINUE WITH GOOGLE</a></div>
+        </div>
+        
+    </div>
+</div>

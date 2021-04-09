@@ -1,0 +1,28 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>CATEGORY</th>
+                <th>TEAM</th>
+                <th>DESCRIPTION</th>
+                <th>TECHNOLOGY</th>
+                <th>START-DATE</th>
+                <th>END-DATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of pros" style="cursor:pointer" (click)="onClick(p.title)">
+                <td>{{p.title}}</td>
+                <td>{{p.cat}}</td>
+                <td>{{p.team}}</td>
+                <td>{{p.desc}}</td>
+                <td>{{p.tech}}</td>
+                <td>{{p.sdate}}</td>
+                <td>{{p.edate}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="go()">ADD PROJECT</button>
+</div>
